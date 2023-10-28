@@ -1,0 +1,134 @@
+body{
+    background-color: #222;
+}
+
+.container {
+    background: rgb(34,193,195);
+    background: linear-gradient(0deg, rgba(34,193,195,1) 26%, rgba(42,235,223,0.8885679271708683) 67%, rgba(45,253,205,1) 100%);
+    border-radius: 20px;
+    margin: 100px auto 0;   
+    min-width: 300px;
+    max-width: 470px;
+    padding: 40px 35px;
+    text-align: center;
+    font-family: 'Roboto', sans-serif;
+    color: white;
+
+}
+
+.container .search {
+    width: 100%;
+    display: flex;
+    text-align: center;
+    justify-content: space-between;
+
+}
+.container .search .searchBox {
+    border: 0;
+    outline: 0;
+    padding: 10px;
+    padding-left: 15px;
+    flex:1;
+    height: 45px;
+    background: #ebfffc;
+    margin-right: 30px;
+    font-size: 19px;
+    border-radius: 30px;
+    cursor: pointer;
+}
+
+.container .search button {
+    border: 0;
+    outline: 0;
+    border-radius: 50%;
+    background: #ebfffc;
+    height: 60px;
+    width: 60px;
+    margin-top: 5px;
+    margin-left: -10px;
+}
+.container .search button img {
+    height: 35px;
+    width: 35px;
+    
+
+}
+
+
+
+.weather .weatherImg {
+    height: 200px;
+    width: 200px;
+    margin-top: 40px;
+    margin-bottom: 0%;
+}
+.container .weather h1 {
+    font-size: 80px;
+    font-weight: 500;
+    margin-top: -10px;
+}
+.container .weather h2 {
+    font-size: 45px;
+    margin-top: -20px;
+    font-weight: 300;
+}
+
+
+.container .weather .others {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    margin-top: 70px;
+    padding: 0 30px;
+}
+.col {
+    display: flex;
+    align-items: center;
+    text-align: left;
+}
+
+.col img {
+    width: 50px;
+    height: 50px;
+    margin-top: -40px;
+    padding-top: -10px;
+}
+.humidity, .wind {
+    font-size: 28px;
+    margin-top: -20px;
+}
+.others .col p {
+    margin-left: 10px;
+    margin-top: -25px;
+}
+
+.weather{
+    display: none;
+}
+
+.invalid {
+    text-align: left;
+    font-size: 14px;
+    color: red;
+    padding-left: 15px;
+    display: none;
+}
+
+#copyright {
+    font-size: 10px;
+    color: white;
+    padding: 15px 30px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+@media screen and (max-width: 390px) {
+    #copyright {
+        display: flex;
+        align-items: left;
+        justify-content: left;
+        margin-left: -15px;
+        
+    }
+  }
